@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+
+  "name": "DownInsta",
+  "description": "This extension by download post instagram",
+  "version": "1.0",
+
+  "browser_action": {
+   "default_popup": "app.html"
+  },
+  "content_scripts": [
+    {
+        "matches": ["http://*/*, http:s//*/*"],
+        "js" : ["app.js"]
+    }
+  ],
+  "permissions": [
+   "activeTab",
+   "tabs"
+  ]
+}
